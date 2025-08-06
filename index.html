@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乐玖芙desuwa</title>
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3a0ca3;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f5f7fb;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 0;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--gray);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            min-height: 70vh;
+            padding: 3rem 0;
+        }
+        .hero-content {
+            flex: 1;
+            padding-right: 2rem;
+        }
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.2rem;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--gray);
+            margin-bottom: 2rem;
+            max-width: 500px;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.7rem 1.8rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+        }
+        .contact-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: #e0e7ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: var(--primary);
+        }
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-content {
+                padding-right: 0;
+                margin-bottom: 2rem;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">乐玖芙</div>
+                <div class="nav-links">
+                    <a href="index.html">首页</a>
+                    <a href="world.html">世界观</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1><span style="color: var(--primary);">乐玖芙desuwa</span></h1>
+                <a href="world.html" class="btn">查看世界观</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/头像.jpg" alt="头像" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; border: 5px solid white; box-shadow: 0 10px 30px rgba(67, 97, 238, 0.2);">
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="contact-section">
+            <h2 style="margin-bottom: 1.5rem; color: var(--primary);">联系方式</h2>
+            <div class="contact-item">
+                <div class="contact-icon">Q</div>
+                <div>
+                    <h3 style="margin-bottom: 0.2rem;">QQ</h3>
+                    <p>314184144</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 乐玖芙 版权所有</p>
+        </div>
+    </footer>
+</body>
+</html>
